@@ -157,6 +157,91 @@ button:focus,
   opacity: 0.8;
 }
 
+
+/* work page start */
+
+/* start grid fallback */
+main{
+  padding: 0px 20px;
+}
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+.porfolio__grid__item img{
+width: 100%;
+}
+/* end grid fallback */
+@supports (display: grid) {
+  .work__content--grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+  }
+  .porfolio__grid__item{
+      background-color: #f3f3f3;
+      padding: 15px;
+      width: auto;
+      min-height: auto;
+      margin: 0;
+  }
+  .porfolio__grid__item:last-child {
+      grid-column: 3 / 3;
+      grid-row: 1 / 3;
+  }
+}
+
+/* About page */
+.main__content--about{
+  text-align: center;
+}
+.main__content--about ul li{
+  list-style: none;
+}
+.main__content--about a{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.sun{
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
  /*ANIMACIJA*/
 
  @keyframes color-change {
