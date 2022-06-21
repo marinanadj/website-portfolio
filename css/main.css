@@ -70,7 +70,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin: 0 auto;
 }
 .portfolio__image{
-  width: 250px;
+  width: 150px;
   height: 250px;
   float: left;
   margin-right: 40px;
