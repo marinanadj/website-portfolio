@@ -74,7 +74,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   height: 250px;
   float: left;
   margin-right: 40px;
-  border-radius: 40%;
+  
 }
 footer{
   clear: both;
